@@ -35,7 +35,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
-gem 'bootstrap-sass', '~> 3.3.7'
+gem 'bootstrap-sass'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -65,4 +65,5 @@ gem 'pry-rails'
 gem 'compass-rails', '3.1.0'
 gem 'sprockets', '3.7.2'
 gem 'jquery-rails'
-gem 'font-awesome-rails'
+gem 'font-awesome-sass'
+gem 'chart.js'
