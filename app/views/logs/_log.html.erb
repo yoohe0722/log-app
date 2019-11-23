@@ -1,0 +1,18 @@
+<div class="col-xl-12 mb-4">
+  <div class="card border-left-warning shadow h-100 py-2">
+    <div class="card-body">
+      <div class="row no-gutters align-items-center">
+        <div class="col mr-2">
+          <div class="text-m font-weight-bold text-primary text-uppercase mb-1"><%= log.created_at %></div>
+            <i class="fas fa-stopwatch fa-2x text-gray-300 float-left"></i>
+            <p class="h2 pl-3 my-auto font-weight-bold text-gray-800 float-left"><%= log.learning_time %>min</p>
+        </div>
+          <div class="col">
+            <p class="float-left pr-2"><%= log.text%></p>
+            <a class="fas fa-trash-alt text-gray-300 float-right" href="logs/destroy"></a>
+            <a class="fas fa-edit text-gray-300 float-right" href="#"></a>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
