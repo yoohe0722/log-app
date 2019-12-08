@@ -78,8 +78,15 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
+# production:
+#   <<: *default
+#   database: log-app_production
+#   username: log-app
+#   password: <%= ENV['LOG-APP_DATABASE_PASSWORD'] %>
+
+  production:
+#半角スペース２個分の空白を開ける
   <<: *default
-  database: log-app_production
-  username: log-app
-  password: <%= ENV['LOG-APP_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
